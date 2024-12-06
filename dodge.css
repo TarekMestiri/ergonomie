@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 10; /* Ensures navbar remains visible */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 5; /* Ensures footer remains below navbar */
+}
+
+footer:hover {
+    cursor: none; /* Makes the cursor invisible */
+}
